@@ -15,8 +15,14 @@ public class MainController {
     private BorderPane painel;
 
     private Void trocaTela(ViewEnum tela){
-        painel.setCenter(viewsBuilder.getPagina(tela));
-        return null;
+        try {
+            painel.setCenter(viewsBuilder.getPagina(tela));
+            return null;
+        }catch (Exception e) {
+            var te = ViewEnum.Index;
+            painel.setCenter(viewsBuilder.getPagina(ViewEnum.Error));
+            return null;
+        }
     }
 
     public void initialize() throws IOException {

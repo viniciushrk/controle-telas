@@ -25,6 +25,16 @@ public class HeaderController {
     }
 
     @FXML
+    public void index(){
+        callBack.apply(ViewEnum.Index);
+    }
+
+    @FXML
+    public void error(){
+        callBack.apply(ViewEnum.Errada);
+    }
+
+    @FXML
     public void initialize() throws IOException {
 
     }

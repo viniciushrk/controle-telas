@@ -7,5 +7,7 @@
    <children>
       <Button onAction="#tela1" mnemonicParsing="false" text="Tela 1" />
       <Button onAction="#tela2" mnemonicParsing="false" text="Tela 2" />
+      <Button onAction="#index" mnemonicParsing="false" text="Index" />
+      <Button onAction="#error" mnemonicParsing="false" text="Error" />
    </children>
 </HBox>
